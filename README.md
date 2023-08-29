@@ -14,6 +14,20 @@ A simple console-based C++ program that allows users to manage their to-do list 
 ## How to use the program
 Good question!
 
-You can simply choose 
+You can simply complie the program by running the following command in the terminal 
 ```bash
-    g++ -o task-manager  main.cpp Task.cpp List.cpp
+g++ -o task-manager  main.cpp Task.cpp List.cpp
+```
+Then type the following command to run the program
+```bash
+./task-manager
+```
+After that, you'll be prompted with menu of options you can choose from
+```bash
+Options:
+1. Add task 
+2. Mark task as completed
+3. Show all tasks 
+4. Exit
+Enter your choice: 3
+```
