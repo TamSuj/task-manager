@@ -22,7 +22,8 @@ Then type the following command to run the program
 ```bash
 ./task-manager
 ```
-After that, you'll be prompted with menu of options you can choose from
+After that, you'll be prompted with menu of options. You can choose one of the choices (1-4) from the menu
+to adjust the to-do-list or exit the program.
 ```bash
 Options:
 1. Add task 
@@ -30,4 +31,69 @@ Options:
 3. Show all tasks 
 4. Exit
 Enter your choice: 3
+```
+
+### Sample workflow
+Here's the example of what the program will looks like:
+```bash
+Options:
+1. Add task 
+2. Mark task as completed
+3. Show all tasks 
+4. Exit
+Enter your choice: 1
+
+Enter task name: Finish CS8 project
+Task added
+
+Options:
+1. Add task 
+2. Mark task as completed
+3. Show all tasks 
+4. Exit
+Enter your choice: 1
+
+Enter task name: Buy groceries
+Task added
+
+Options:
+1. Add task 
+2. Mark task as completed
+3. Show all tasks 
+4. Exit
+Enter your choice: 3
+
+Current tasks:
+[ ] Buy groceries
+[ ] Finish CS8 project
+
+Options:
+1. Add task 
+2. Mark task as completed
+3. Show all tasks 
+4. Exit
+Enter your choice: 2
+
+Enter task name: Buy groceries
+Task marked as completed
+
+Options:
+1. Add task 
+2. Mark task as completed
+3. Show all tasks 
+4. Exit
+Enter your choice: 3
+
+Current tasks:
+[X] Buy groceries
+[ ] Finish CS8 project
+
+Options:
+1. Add task 
+2. Mark task as completed
+3. Show all tasks 
+4. Exit
+Enter your choice: 4
+
+Exiting. Thanks for trying out the program!
 ```
