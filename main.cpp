@@ -16,6 +16,7 @@ int main() {
 
         // Check which action they are trying to do and perform the task by calling functions accordingly
         switch (choice) {
+            // Add new task
             case '1': {
                 std::string taskName;
                 std::cout << "Enter task name: ";
@@ -29,6 +30,7 @@ int main() {
                 break;
             }
 
+            // Mark task as completed
             case '2': {
                 std::string taskName;
                 std::cout << "Enter task name: ";
@@ -42,15 +44,18 @@ int main() {
                 break;
             }
 
+            // Show all the task (both completed and incompleted)
             case '3':
                 std::cout << "Current tasks:\n";
                 myList.showTask();
                 break;
 
+            // End the program
             case '4':
                 std::cout << "Exiting. Thanks for trying out the program!\n";
                 break;
 
+            // In case user input something else other than the options
             default:
                 std::cout << "Invalid choice, please re-enter\n";
         }
