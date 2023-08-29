@@ -31,4 +31,8 @@ public:
     }
 };
 
+bool inline operator==(Task &lhs, Task &rhs) {
+    return lhs.getName() == rhs.getName();
+}
+
 #endif

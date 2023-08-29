@@ -1,5 +1,4 @@
 #include <iostream>
-#include "Task.cpp"
 #include "List.h"
 
 int main() {
@@ -7,6 +6,8 @@ int main() {
     char choice = ' ';
 
     while (choice != '4') {
+        std::string taskName = ""; // Used to store user input, reset everytime
+
         // Show all the options for the user to choose from
         std::cout << "Options:\n";
         std::cout << "1. Add task \n2. Mark task as completed\n";
@@ -18,10 +19,10 @@ int main() {
         switch (choice) {
             // Add new task
             case '1': {
-                std::string taskName;
                 std::cout << "Enter task name: ";
                 std::cin.ignore(); // Clear the newline character from the previous input
                 std::getline(std::cin, taskName);
+                // I learned this way of getting user input from Youtube
 
                 Task newTask(taskName);
                 myList.addTask(newTask);
@@ -32,7 +33,6 @@ int main() {
 
             // Mark task as completed
             case '2': {
-                std::string taskName;
                 std::cout << "Enter task name: ";
                 std::cin.ignore();
                 std::getline(std::cin, taskName);
@@ -57,7 +57,7 @@ int main() {
 
             // In case user input something else other than the options
             default:
-                std::cout << "Invalid choice, please re-enter\n";
+                std::cout << "!!! Invalid choice, please re-enter\n";
         }
 
     };

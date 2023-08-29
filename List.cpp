@@ -36,4 +36,10 @@ void toDoList::showTask(){
     }
 }
 
+// Overload == operator so we can compare the content of each task easily
+// Simply check if the name task if the _item of the 2 Nodes are the same
+bool inline operator==(const Node &lhs, const Node &rhs){
+    return lhs._item == rhs._item;
+}
+
 #endif
