@@ -10,7 +10,9 @@ struct Node
 public:
     Node(const Task& item = Task(), Node* next = nullptr);
 
-    friend std::ostream& operator<<(std::ostream& outs, const Node& printMe);
+    // friend std::ostream& operator<<(std::ostream& outs, const Node& printMe){
+    //     outs << printMe._item << std::endl;
+    // }
 
     Task _item;
     Node* _next;
